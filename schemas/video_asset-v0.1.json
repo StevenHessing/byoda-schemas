@@ -26,14 +26,14 @@
             "description": "list of audio tracks for the video",
             "type": "array",
             "items": {
-                "$ref": "schemas/audio_track-v0.1"
+                "$ref": "schemas/audio_track-v0.1.json"
             }
         },
         "subtitles": {
             "description": "list of subtitles for the asset",
             "type": "array",
             "items": {
-                "$ref": "schemas/subtitle-v0.1"
+                "$ref": "schemas/subtitle-v0.1.json"
             }
         }
     }

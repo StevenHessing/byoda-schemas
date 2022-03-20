@@ -8,7 +8,7 @@
         "metadata": {
             "type": "array",
             "items": {
-                "$ref": "metadata"
+                "$ref": "/schemas/metadata-v1.0.json"
             }
         },
         "horizontal_resolution": {

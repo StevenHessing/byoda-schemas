@@ -9,7 +9,7 @@
         "metadata": {
             "type": "array",
             "items": {
-                "$ref": "metadata"
+                "$ref": "/schemas/metadata-v1.0.json"
             }
         },
         "audio_url": {
@@ -21,7 +21,7 @@
         "audio_tracks": {
             "type": "array",
             "items": {
-                "$ref": "audio_track"
+                "$ref": "schemas/audio_track-v1.0.json"
             }
         }
     }
