@@ -1,0 +1,40 @@
+{
+    "$id": "https://dir.byoda.net/schemas/vdeo_asset-v0.1",
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "description": "Video with one or more video layers, audio tracks and subtitles",
+    "properties": {
+        "locale": {
+            "description": "the locale for the video asset. Can be set, for example, if the video has embedded text",
+            "type": "string"
+        },
+        "container": {
+            "description": "Container such as mpeg2-ts, mp4, HLS",
+            "type": "string"
+        },
+        "asset_url": {
+            "description": "URL to start playback of the video asset",
+            "type": "string"
+        },
+        "video_layers": {
+            "description": "list of video layers, may be of length 1 if the asset is not multi-bitrate",
+            "type": "array",
+            "items": {
+                "$ref": "schemas/video_layer-v0.1"
+            }
+        },
+        "audio_tracks": {
+            "description": "list of audio tracks for the video",
+            "type": "array",
+            "items": {
+                "$ref": "schemas/audio_track-v0.1"
+            }
+        },
+        "subtitles": {
+            "description": "list of subtitles for the asset",
+            "type": "array",
+            "items": {
+                "$ref": "schemas/subtitle-v0.1"
+            }
+        }
+    }
+}

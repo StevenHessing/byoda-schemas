@@ -1,0 +1,22 @@
+{
+    "$id": "https://dir.byoda.net/schemas/audio_track-v0.1",
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "description": "describes an audio track of an video asset or audio asset",
+    "properties": {
+        "locale": {
+            "type": "string"
+        },
+        "codec": {
+            "description": "codec for the audio track, ie. mp3, flac, etc.",
+            "type": "string"
+        },
+        "sample_rate": {
+            "description": "sample rate in Hz",
+            "type": "number"
+        },
+        "sample_depth": {
+            "description": "number of bits",
+            "type": "number"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "$id": "https://dir.byoda.net/schemas/video_layer-v0.1",
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "description": "a single video layer of a video asset",
+    "properties": {
+        "horizontal_resolution": {
+            "type": "integer"
+        },
+        "vertical_resolution": {
+            "type": "integer"
+        },
+        "bitrate": {
+            "description": "Bitrate in bits per second",
+            "type": "integer"
+        },
+        "framerate": {
+            "type": "number"
+        },
+        "codec": {
+            "description": "Codec such as mpeg2, AVC, HEVC, VP1, etc.",
+            "type": "string"
+        }
+    }
+},

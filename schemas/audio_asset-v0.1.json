@@ -1,0 +1,28 @@
+{
+    "$id": "https://dir.byoda.net/schemas/audio_asset-v0.1",
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "properties": {
+        "locale": {
+            "description": "Locale for the audio asset",
+            "type": "string"
+        },
+        "metadata": {
+            "type": "array",
+            "items": {
+                "$ref": "metadata"
+            }
+        },
+        "audio_url": {
+            "type": "string"
+        },
+        "container": {
+            "type": "string"
+        },
+        "audio_tracks": {
+            "type": "array",
+            "items": {
+                "$ref": "audio_track"
+            }
+        }
+    }
+}

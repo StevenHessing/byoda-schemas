@@ -1,0 +1,57 @@
+{
+    "$id": "https://dir.byoda.net/schemas/metadata-v0.1",
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "description": "Metadata for a video asset",
+    "properties": {
+        "locale": {
+            "description": "locale for the metadata, ie. en_US",
+            "type": "string"
+        },
+        "creator": {
+            "description": "creator of the asset",
+            "type": "string"
+        },
+        "copyright_owner": {
+            "type": "string"
+        },
+        "copyright_years": {
+            "type": "string"
+        },
+        "age_restrictions": {
+            "description": "List of age restrictions for various rating systems",
+            "type": "array",
+            "items": {
+                "$ref": "/schema/age_restriction"
+            }
+        },
+        "content_warnings": {
+            "description": "list of terms with potention triggers, such as violence, or cursing",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "publisher": {
+            "description": "the publisher of the asset",
+            "type": "string"
+        },
+        "title": {
+            "description": "title of the asset",
+            "type": "string"
+        },
+        "subject": {
+            "description": "a brief description of the asset",
+            "type": "string"
+        },
+        "text": {
+            "description": "text for the asset",
+            "type": "string"
+        },
+        "keywords": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    }
+}
