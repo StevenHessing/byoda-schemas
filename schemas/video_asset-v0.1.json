@@ -19,21 +19,21 @@
             "description": "list of video layers, may be of length 1 if the asset is not multi-bitrate",
             "type": "array",
             "items": {
-                "$ref": "schemas/video_layer-v0.1"
+                "$ref": "/schemas/video_layer-v0.1"
             }
         },
         "audio_tracks": {
             "description": "list of audio tracks for the video",
             "type": "array",
             "items": {
-                "$ref": "schemas/audio_track-v0.1.json"
+                "$ref": "/schemas/audio_track-v0.1.json"
             }
         },
         "subtitles": {
             "description": "list of subtitles for the asset",
             "type": "array",
             "items": {
-                "$ref": "schemas/subtitle-v0.1.json"
+                "$ref": "/schemas/subtitle-v0.1.json"
             }
         }
     }
