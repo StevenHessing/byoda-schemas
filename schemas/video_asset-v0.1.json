@@ -1,5 +1,5 @@
 {
-    "$id": "https://dir.byoda.net/schemas/vdeo_asset-v0.1",
+    "$id": "https://dir.byoda.net/schemas/vdeo_asset-v0.1.json",
     "$schema": "https://json-schema.org/draft-07/schema#",
     "description": "Video with one or more video layers, audio tracks and subtitles",
     "properties": {
@@ -19,7 +19,7 @@
             "description": "list of video layers, may be of length 1 if the asset is not multi-bitrate",
             "type": "array",
             "items": {
-                "$ref": "/schemas/video_layer-v0.1"
+                "$ref": "/schemas/video_layer-v0.1.json"
             }
         },
         "audio_tracks": {
