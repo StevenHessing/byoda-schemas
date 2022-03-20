@@ -1,0 +1,25 @@
+{
+    "$id": "https://dir.byoda.net/schemas/asset-v0.1",
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "properties": {
+        "image_url": {
+            "type": "string"
+        },
+        "metadata": {
+            "type": "array",
+            "items": {
+                "$ref": "metadata"
+            }
+        },
+        "horizontal_resolution": {
+            "type": "number"
+        },
+        "vertical_resolution": {
+            "type": "number"
+        },
+        "format": {
+            "description": "png, gif, SVG, etc.",
+            "type": "string"
+        }
+    }
+}

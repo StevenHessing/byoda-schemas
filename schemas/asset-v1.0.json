@@ -1,0 +1,36 @@
+{
+    "$id": "https://dir.byoda.net/schemas/asset-v0.1",
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "description": "metadata of an asset",
+    "properties": {
+        "created": {
+            "description": "data of creation of this asset",
+            "type": "string",
+            "format": "date-time"
+        },
+        "mentions": {
+            "type": "array",
+            "items": {
+                "$ref": "/schemas/mention-v1.0.json"
+            }
+        },
+        "video_assets": {
+            "type": "array",
+            "items": {
+                "$ref": "/schemas/video_asset-v1.0.json"
+            }
+        },
+        "audio_assets": {
+            "type": "array",
+            "items": {
+                "$ref": "/schemas/audio_asset-v1.0.json"
+            }
+        },
+        "images": {
+            "type": "array",
+            "items": {
+                "$ref": "/schemas/image-v1.0.json"
+            }
+        }
+    }
+}
