@@ -11,25 +11,25 @@
         "mentions": {
             "type": "array",
             "items": {
-                "$ref": "/schemas/mention-v1.0.json"
+                "$ref": "/schemas/mention-v0.1.json"
             }
         },
         "video_assets": {
             "type": "array",
             "items": {
-                "$ref": "/schemas/video_asset-v1.0.json"
+                "$ref": "/schemas/video_asset-v0.1.json"
             }
         },
         "audio_assets": {
             "type": "array",
             "items": {
-                "$ref": "/schemas/audio_asset-v1.0.json"
+                "$ref": "/schemas/audio_asset-v0.1.json"
             }
         },
         "images": {
             "type": "array",
             "items": {
-                "$ref": "/schemas/image-v1.0.json"
+                "$ref": "/schemas/image-v0.1.json"
             }
         }
     }
