@@ -21,7 +21,7 @@
             "description": "List of age restrictions for various rating systems",
             "type": "array",
             "items": {
-                "$ref": "/schema/age_restriction-v1.0.json"
+                "$ref": "/schemas/age_restriction-v1.0.json"
             }
         },
         "content_warnings": {
