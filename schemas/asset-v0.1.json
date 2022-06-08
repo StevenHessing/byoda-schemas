@@ -8,12 +8,6 @@
             "type": "string",
             "format": "date-time"
         },
-        "mentions": {
-            "type": "array",
-            "items": {
-                "$ref": "/schemas/mention-v0.1.json"
-            }
-        },
         "video_assets": {
             "type": "array",
             "items": {
